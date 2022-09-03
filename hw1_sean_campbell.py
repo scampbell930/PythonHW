@@ -78,5 +78,7 @@ if __name__ == '__main__':
 
         # Check if all answers are correct
         elif user_name_correct and user_float_correct and user_int_correct:
-            print("Welcome! The secret information is: 6543169845368431")
+            # Print secret information and exit loop
+            secret = 97236923503740721340
+            print("Welcome! The secret information is: " + str(secret))
             not_correct = False
