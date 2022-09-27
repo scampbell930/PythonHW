@@ -30,7 +30,7 @@ if __name__ == '__main__':
                 print("What is the secret integer?")
                 user_int = int(input())
 
-                # Calculate new value
+                # Calculate new value by finding the remainder after dividing by 6
                 user_int = user_int % 6
 
                 if user_int == secret_int:
