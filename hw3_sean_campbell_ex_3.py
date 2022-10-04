@@ -2,7 +2,10 @@
 Homework 3, Exercise 3
 Name: Sean Campbell
 Date: 10/07/2022
-Description: FILL THIS IN
+Description: This program simulates a stores inventory. It stores the inventory
+in a dictionary with the name and quantity being the key-value pair. The user can add or
+remove items from the inventory, and they can be printed neatly with the printInventory
+function
 """
 
 
@@ -46,11 +49,16 @@ if __name__ == '__main__':
                  'Lotion': 16,
                  'Razors': 12}
 
+    # Step 2
     printInventory(inventory)
+
+    # Step 3
     addItem(inventory, 'Advil')
     addItem(inventory, 'Lotion')
     print()
     printInventory(inventory)
+
+    # Step 4
     deleteItem(inventory, 'Soap')
     deleteItem(inventory, 'Advil')
     print()

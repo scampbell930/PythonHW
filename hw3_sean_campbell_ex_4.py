@@ -2,7 +2,9 @@
 Homework 3, Exercise 3
 Name: Sean Campbell
 Date: 10/07/2022
-Description: FILL THIS IN
+Description: This is a program that simulates playing a game of tic tac toe.
+The game can receive user input for the location of the moves, but cannot determine
+if a game has been won or not.
 """
 
 
@@ -41,12 +43,20 @@ if __name__ == '__main__':
         # Display game board and ask for input
         print_board(board)
 
-        # Prompt user for input
-        print("\nEnter Horizontal Coordinate:")
-        x_coord = int(input())
+        # Make sure board space is not taken
+        while True:
+            # Prompt user for input
+            print("\nEnter Horizontal Coordinate:")
+            x_coord = int(input())
 
-        print("Enter Vertical Coordinate:")
-        y_coord = int(input())
+            print("Enter Vertical Coordinate:")
+            y_coord = int(input())
+
+            # Test if space is empty
+            if board[3 * y_coord + x_coord] != ' ':
+                print("Entered space has already been used. Try again!")
+            else:
+                break
 
         # Calculate index from coordinates
         index = 3 * y_coord + x_coord

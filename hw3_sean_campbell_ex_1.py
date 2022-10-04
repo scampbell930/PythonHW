@@ -2,7 +2,8 @@
 Homework 3, Exercise 1
 Name: Sean Campbell
 Date: 10/07/2022
-Description: FILL THIS IN
+Description: This program takes a grid created with a 2-dimensional list
+and prints is after being rotated clock-wise by 90 degrees.
 """
 
 
